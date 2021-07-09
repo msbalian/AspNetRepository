@@ -1,41 +1,55 @@
 ﻿using PessoaAPI.Model;
+using PessoaAPI.Model.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace PessoaAPI.Services.Implementations
 {
     public class PessoaServiceImplementation : IPessoaService
     {
+
+        private PostgreSQLContext _context;
+
+        public PessoaServiceImplementation(PostgreSQLContext context)
+        {
+            _context = context;
+        }
+
         public Pessoa Create(Pessoa pessoa)
         {
-            throw new NotImplementedException();
+            return pessoa;
         }
+
 
         public void Delete(Pessoa pessoa)
         {
-            throw new NotImplementedException();
         }
 
         public void DeleteById(long id)
         {
-            throw new NotImplementedException();
         }
 
         public List<Pessoa> FindAll()
         {
-            throw new NotImplementedException();
+
+            return _context.Pessoas.ToList();
+
         }
+
 
         public Pessoa FindById(long id)
         {
-            throw new NotImplementedException();
+            return _context.Pessoas.SingleOrDefault(p => p.Id.Equals(id));
         }
 
         public Pessoa Update(Pessoa pessoa)
         {
-            throw new NotImplementedException();
+            return pessoa;
         }
+        
+
     }
 }

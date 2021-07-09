@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using PessoaAPI.Model;
+using PessoaAPI.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,22 +10,61 @@ using System.Threading.Tasks;
 namespace PessoaAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class PessoaController : ControllerBase
     {
         
         private readonly ILogger<PessoaController> _logger;
+        private IPessoaService _pessoaService;
 
-        public PessoaController(ILogger<PessoaController> logger)
+        public PessoaController(ILogger<PessoaController> logger, IPessoaService pessoaService)
         {
             _logger = logger;
+            _pessoaService = pessoaService;
         }
 
-        [HttpGet("soma/{num1}/{num2}")]
-        public IActionResult Soma(int num1, int num2)
+        [HttpGet]
+        public IActionResult Get()
         {
-            int soma = num1 + num2;
-            return Ok(soma.ToString());
+            return Ok(_pessoaService.FindAll());
         }
+
+        [HttpGet("{id}")]
+        public IActionResult Get(long id)
+        {
+            var pessoa = _pessoaService.FindById(id);
+            if (pessoa == null) return NotFound();
+            return Ok(pessoa);
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] Pessoa pessoa)
+        {
+            if (pessoa == null) return BadRequest();
+            return Ok(_pessoaService.Create(pessoa));
+        }
+
+        [HttpPut]
+        public IActionResult Put([FromBody] Pessoa pessoa)
+        {
+            if (pessoa == null) return BadRequest();
+            return Ok(_pessoaService.Update(pessoa));
+        }
+
+        [HttpDelete]
+        public IActionResult Delete([FromBody] Pessoa pessoa)
+        {
+            if (pessoa == null) return BadRequest();
+            _pessoaService.Delete(pessoa);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(long id)
+        {
+            _pessoaService.DeleteById(id);
+            return NoContent();
+        }
+
     }
 }

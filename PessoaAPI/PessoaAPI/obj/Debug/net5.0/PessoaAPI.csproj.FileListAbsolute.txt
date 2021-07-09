@@ -21,3 +21,11 @@ D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\obj\Debug\net5.0\P
 D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\obj\Debug\net5.0\ref\PessoaAPI.dll
 D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\obj\Debug\net5.0\PessoaAPI.pdb
 D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\obj\Debug\net5.0\PessoaAPI.genruntimeconfig.cache
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\bin\Debug\net5.0\Npgsql.dll
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\obj\Debug\net5.0\PessoaAPI.csproj.CopyComplete
