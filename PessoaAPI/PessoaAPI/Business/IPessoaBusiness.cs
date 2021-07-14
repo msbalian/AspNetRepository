@@ -1,9 +1,9 @@
 ﻿using PessoaAPI.Model;
 using System.Collections.Generic;
 
-namespace PessoaAPI.Services
+namespace PessoaAPI.Business
 {
-    public interface IPessoaService
+    public interface IPessoaBusiness
     {
         Pessoa Create(Pessoa pessoa);
 

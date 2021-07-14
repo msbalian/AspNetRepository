@@ -9,12 +9,14 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using PessoaAPI.Model.Context;
-using PessoaAPI.Services;
-using PessoaAPI.Services.Implementations;
+using PessoaAPI.Business;
+using PessoaAPI.Business.Implementations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PessoaAPI.Repository;
+using PessoaAPI.Repository.Implementations;
 
 namespace PessoaAPI
 {
@@ -39,7 +41,9 @@ namespace PessoaAPI
 
             services.AddApiVersioning();
             
-            services.AddScoped<IPessoaService, PessoaServiceImplementation>();
+            services.AddScoped<IPessoaBusiness, PessoaBusinessImplementation>();
+
+            services.AddScoped<IPessoaRepository, PessoaRepositoryImplementation>();
 
         }
 

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PessoaAPI.Model;
-using PessoaAPI.Services;
+using PessoaAPI.Business;
 
 namespace PessoaAPI.Controllers
 {
@@ -12,24 +12,24 @@ namespace PessoaAPI.Controllers
     {
         
         private readonly ILogger<PessoaController> _logger;
-        private IPessoaService _pessoaService;
+        private IPessoaBusiness _pessoaBusiness;
 
-        public PessoaController(ILogger<PessoaController> logger, IPessoaService pessoaService)
+        public PessoaController(ILogger<PessoaController> logger, IPessoaBusiness pessoaBusiness)
         {
             _logger = logger;
-            _pessoaService = pessoaService;
+            _pessoaBusiness = pessoaBusiness;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_pessoaService.FindAll());
+            return Ok(_pessoaBusiness.FindAll());
         }
 
         [HttpGet("{id}")]
         public IActionResult Get(long id)
         {
-            var pessoa = _pessoaService.FindById(id);
+            var pessoa = _pessoaBusiness.FindById(id);
             if (pessoa == null) return NotFound();
             return Ok(pessoa);
         }
@@ -38,28 +38,28 @@ namespace PessoaAPI.Controllers
         public IActionResult Post([FromBody] Pessoa pessoa)
         {
             if (pessoa == null) return BadRequest();
-            return Ok(_pessoaService.Create(pessoa));
+            return Ok(_pessoaBusiness.Create(pessoa));
         }
 
         [HttpPut]
         public IActionResult Put([FromBody] Pessoa pessoa)
         {
             if (pessoa == null) return BadRequest();
-            return Ok(_pessoaService.Update(pessoa));
+            return Ok(_pessoaBusiness.Update(pessoa));
         }
 
         [HttpDelete]
         public IActionResult Delete([FromBody] Pessoa pessoa)
         {
             if (pessoa == null) return BadRequest();
-            _pessoaService.Delete(pessoa);
+            _pessoaBusiness.Delete(pessoa);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
-            _pessoaService.DeleteById(id);
+            _pessoaBusiness.DeleteById(id);
             return NoContent();
         }
 

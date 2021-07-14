@@ -4,14 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PessoaAPI.Services.Implementations
+namespace PessoaAPI.Repository.Implementations
 {
-    public class PessoaServiceImplementation : IPessoaService
+    public class PessoaRepositoryImplementation : IPessoaRepository
     {
 
         private PostgreSQLContext _context;
 
-        public PessoaServiceImplementation(PostgreSQLContext context)
+        public PessoaRepositoryImplementation(PostgreSQLContext context)
         {
             _context = context;
         }
@@ -111,7 +111,13 @@ namespace PessoaAPI.Services.Implementations
             
             return pessoa;
         }
-        
+
+        public bool Exists(long id)
+        {
+            return _context.Pessoas.Any(p => p.Id.Equals(id));
+        }
+
+
 
     }
 }
