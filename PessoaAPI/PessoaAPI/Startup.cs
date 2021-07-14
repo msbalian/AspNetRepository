@@ -37,6 +37,8 @@ namespace PessoaAPI
 
             services.AddEntityFrameworkNpgsql().AddDbContext<PostgreSQLContext>(options => options.UseNpgsql(Configuration.GetConnectionString("PessoasDB")));
 
+            services.AddApiVersioning();
+            
             services.AddScoped<IPessoaService, PessoaServiceImplementation>();
 
         }

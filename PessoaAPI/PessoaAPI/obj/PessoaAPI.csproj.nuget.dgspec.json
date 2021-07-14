@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\sites-sistemas\\AspNet\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj": {}
+    "C:\\DotNetProjects\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj": {}
   },
   "projects": {
-    "D:\\sites-sistemas\\AspNet\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj": {
+    "C:\\DotNetProjects\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sites-sistemas\\AspNet\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj",
+        "projectUniqueName": "C:\\DotNetProjects\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj",
         "projectName": "PessoaAPI",
-        "projectPath": "D:\\sites-sistemas\\AspNet\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj",
-        "packagesPath": "C:\\Users\\PHDL\\.nuget\\packages\\",
-        "outputPath": "D:\\sites-sistemas\\AspNet\\AspNetRepository\\PessoaAPI\\PessoaAPI\\obj\\",
+        "projectPath": "C:\\DotNetProjects\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj",
+        "packagesPath": "C:\\Users\\balian\\.nuget\\packages\\",
+        "outputPath": "C:\\DotNetProjects\\AspNetRepository\\PessoaAPI\\PessoaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\PHDL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\balian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +43,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.7, )"

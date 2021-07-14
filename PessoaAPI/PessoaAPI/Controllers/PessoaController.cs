@@ -2,15 +2,12 @@
 using Microsoft.Extensions.Logging;
 using PessoaAPI.Model;
 using PessoaAPI.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PessoaAPI.Controllers
 {
+    [ApiVersion("1")]
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/[controller]/v{version:apiVersion}")]
     public class PessoaController : ControllerBase
     {
         
