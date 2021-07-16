@@ -1,10 +1,6 @@
 ﻿using PessoaAPI.Model;
-using PessoaAPI.Model.Context;
 using PessoaAPI.Repository;
-using PessoaAPI.Repository.Implementations;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace PessoaAPI.Business.Implementations
 {

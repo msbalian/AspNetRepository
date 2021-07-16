@@ -106,7 +106,7 @@ namespace PessoaAPI.Repository.Implementations
             }
             else
             {
-                return new Pessoa();
+                return null;
             }
             
             return pessoa;
