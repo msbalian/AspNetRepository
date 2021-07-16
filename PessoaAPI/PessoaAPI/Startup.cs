@@ -42,6 +42,10 @@ namespace PessoaAPI
 
             services.AddScoped<IPessoaRepository, PessoaRepositoryImplementation>();
 
+            services.AddScoped<ILivroBusiness, LivroBusiness>();
+
+            services.AddScoped<ILivroRepository, LivroRepository>();
+
         }
 
 

@@ -712,23 +712,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\balian\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\PHDL\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DotNetProjects\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj",
+      "projectUniqueName": "D:\\sites-sistemas\\AspNet\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj",
       "projectName": "PessoaAPI",
-      "projectPath": "C:\\DotNetProjects\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj",
-      "packagesPath": "C:\\Users\\balian\\.nuget\\packages\\",
-      "outputPath": "C:\\DotNetProjects\\AspNetRepository\\PessoaAPI\\PessoaAPI\\obj\\",
+      "projectPath": "D:\\sites-sistemas\\AspNet\\AspNetRepository\\PessoaAPI\\PessoaAPI\\PessoaAPI.csproj",
+      "packagesPath": "C:\\Users\\PHDL\\.nuget\\packages\\",
+      "outputPath": "D:\\sites-sistemas\\AspNet\\AspNetRepository\\PessoaAPI\\PessoaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\balian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PHDL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -62,3 +62,5 @@ C:\DotNetProjects\AspNetRepository\PessoaAPI\PessoaAPI\obj\Debug\net5.0\PessoaAP
 C:\DotNetProjects\AspNetRepository\PessoaAPI\PessoaAPI\obj\Debug\net5.0\PessoaAPI.genruntimeconfig.cache
 C:\DotNetProjects\AspNetRepository\PessoaAPI\PessoaAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\DotNetProjects\AspNetRepository\PessoaAPI\PessoaAPI\obj\Debug\net5.0\PessoaAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\sites-sistemas\AspNet\AspNetRepository\PessoaAPI\PessoaAPI\obj\Debug\net5.0\PessoaAPI.MvcApplicationPartsAssemblyInfo.cs
